@@ -1,7 +1,7 @@
 from fastapi import FastAPI, File, UploadFile, Header
 from pydantic import BaseModel
-from skills import common_skills
-from analyzer import calculate_ats_score 
+from ats_api.skills import common_skills
+from ats_api.analyzer import calculate_ats_score
 import fitz
 
 VALID_API_KEYS = [
